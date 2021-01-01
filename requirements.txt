@@ -1,0 +1,5 @@
+streamlit==0.69
+pillow
+time
+random
+pickle
