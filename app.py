@@ -15,15 +15,15 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 @st.cache(show_spinner=False)
 def intro_image():
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 28)
-  im = Image.new("RGB", (950, 70), "white")
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 60)
+  im = Image.new("RGB", (950, 100), "white")
   d = ImageDraw.Draw(im) 
-  d.text((250, 15), "Identify Your", fill="OrangeRed", anchor="ms", font=font)
+  d.text((250, 40), "Identify Your", fill="OrangeRed", anchor="ms", font=font)
 
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 100)
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 500)
   im2 = Image.open('style.jpg')
   d = ImageDraw.Draw(im2) 
-  d.text((100, 400), "Learning", fill="LightYellow", anchor="ms", font=font)
+  d.text((400, 400), "Learning", fill="LightYellow", anchor="ms", font=font)
   return im,im2
 
 im , im2 = intro_image()
