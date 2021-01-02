@@ -18,9 +18,9 @@ def intro_image():
   font = ImageFont.truetype("NebulousRegular-54aV.ttf", 65)
   im = Image.new("RGB", (890, 100), "white")
   d = ImageDraw.Draw(im) 
-  d.text((550, 60), "Identify Your", fill="OrangeRed", anchor="ms", font=font)
+  d.text((450, 60), "Identify Your", fill="OrangeRed", anchor="ms", font=font)
 
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 630)
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 605)
   im2 = Image.open('style.jpg')
   d = ImageDraw.Draw(im2) 
   d.text((1500, 850), "Learning", fill="LightYellow", anchor="ms", font=font)
