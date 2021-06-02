@@ -68,8 +68,7 @@ kinesthetic = ['K1.jpg', 'K2.jpg','K3.jpg']
 
  
 ph = st.empty()
-genre = ph.radio("From your understanding which of these is your most dominant learning style?",
-                 options=['Visual', 'Aural', 'Reader','Kinesthetic'])   
+
 ques = ["I like learning by visualization,  like use of pictures, videos, slides",
         "I like learning by using diagrams, graphs and charts",
         "I follow written directions better than oral directions",
@@ -80,6 +79,8 @@ ques = ["I like learning by visualization,  like use of pictures, videos, slides
         ]
 ques_id = {}
 with ph.beta_container():
+  genre = st.radio("From your understanding which of these is your most dominant learning style?",
+                 options=['Visual', 'Aural', 'Reader','Kinesthetic'])   
   for i in range(0, 7):
       st.subheader(ques[i])
       ques_id["ques{0}".format(i)]= st.radio(' ',('Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'),key='q'f'{i}')
