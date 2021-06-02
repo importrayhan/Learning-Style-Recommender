@@ -60,8 +60,7 @@ Source: (www.geocities.com/-educationplace)      \n
 A pre trained Decision Tree Model is running on the backend of this website\n
 During evaluation of the model, it gave the following f1 score for the mentioned VARK categories respectively: \n
 ## [0.70, 0.65, 0.81, 0.81]""")
-genre = st.radio("From your understanding which of these is your most dominant learning style?",
-                 options=['Visual', 'Aural', 'Reader','Kinesthetic'])      
+
 reader = ['R1.jpg', 'R2.jpg']
 visual = ['V1.jpg', 'V2.jpg']
 aural = ['A1.jpg', 'A2.jpg','A3.jpg','A4.jpg','A5.jpg']
