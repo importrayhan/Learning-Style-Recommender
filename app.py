@@ -3,6 +3,8 @@ import streamlit as st
 import time
 import random
 import pickle
+import requests
+
 
 hide_streamlit_style = """
                 <style>
@@ -89,7 +91,8 @@ def one_pos():
 placeholder = st.empty()  
 
 if placeholder.button('Find Out'):
-    
+   requests.get('https://script.google.com/macros/s/AKfycbxpHi1IDMUHwYf_3U_Q3y0jCaqegdkQ1K8qL7kdv30VKA5iGwiMBRMWAFD5SCkruL7lwg/exec?tem=888888&humid=64580000&room=1')
+ 
    placeholder.empty()
    pickle_in = open('learningpreference.pkl', 'rb') 
    classifier = pickle.load(pickle_in)
