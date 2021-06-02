@@ -152,6 +152,6 @@ if placeholder.button('Find Out'):
       st.markdown("<h1 style='text-align: center; color: Tomato;'>Visual method is your effective learning style 🗺️</h1>", unsafe_allow_html=True) 
       imagew = Image.open(random.choice(visual))
    st.image(imagew, use_column_width= True )
-   requests.get('https://script.google.com/macros/s/AKfycbxQv4rcAD57LLBvjvZn4rLn03rjpauVLMvLdxaIB_eVsjRXyKKHw4QVK7XR6wFbJBJnOg/exec?tem='+genre+'&humid='+predic+'&res='+res+'+'&contid='+user_id+'&room=1')
+   requests.get('https://script.google.com/macros/s/AKfycbxQv4rcAD57LLBvjvZn4rLn03rjpauVLMvLdxaIB_eVsjRXyKKHw4QVK7XR6wFbJBJnOg/exec?tem='+genre+'&humid='+predic+'&res='+res+'&contid='+user_id+'&room=1')
    st.markdown("<h1 style='text-align: center; color: Tomato;'>Happy Learning ✒️</h1>", unsafe_allow_html=True) 
    st.button("Refresh")
