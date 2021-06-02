@@ -69,7 +69,8 @@ kinesthetic = ['K1.jpg', 'K2.jpg','K3.jpg']
 
  
 ph = st.empty()
-
+genre = ph.radio("From your understanding which of these is your most dominant learning style?",
+                 options=['Visual', 'Aural', 'Reader','Kinesthetic'])   
 ques = ["I like learning by visualization,  like use of pictures, videos, slides",
         "I like learning by using diagrams, graphs and charts",
         "I follow written directions better than oral directions",
@@ -150,6 +151,6 @@ if placeholder.button('Find Out'):
       st.markdown("<h1 style='text-align: center; color: Tomato;'>Visual method is your effective learning style 🗺️</h1>", unsafe_allow_html=True) 
       imagew = Image.open(random.choice(visual))
    st.image(imagew, use_column_width= True )
-   requests.get('https://script.google.com/macros/s/AKfycbxpHi1IDMUHwYf_3U_Q3y0jCaqegdkQ1K8qL7kdv30VKA5iGwiMBRMWAFD5SCkruL7lwg/exec?tem='+genre+'&humid='+predic+'&room=1')
+   requests.get('https://script.google.com/macros/s/AKfycbxpHi1IDMUHwYf_3U_Q3y0jCaqegdkQ1K8qL7kdv30VKA5iGwiMBRMWAFD5SCkruL7lwg/exec?tem='+genre+'&humid='+predic+'&res='+X_test+'&room=1')
    st.markdown("<h1 style='text-align: center; color: Tomato;'>Happy Learning ✒️</h1>", unsafe_allow_html=True) 
    st.button("Refresh")
