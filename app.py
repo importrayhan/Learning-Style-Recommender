@@ -81,6 +81,7 @@ ques_id = {}
 with ph.beta_container():
   genre = st.radio("From your understanding which of these is your most dominant learning style?",
                  options=['Visual', 'Aural', 'Reader','Kinesthetic'])   
+  user_id = st.text_input("* Contact Number", value="Your Mobile Number ", max_chars=14)
   for i in range(0, 7):
       st.subheader(ques[i])
       ques_id["ques{0}".format(i)]= st.radio(' ',('Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'),key='q'f'{i}')
@@ -151,6 +152,6 @@ if placeholder.button('Find Out'):
       st.markdown("<h1 style='text-align: center; color: Tomato;'>Visual method is your effective learning style 🗺️</h1>", unsafe_allow_html=True) 
       imagew = Image.open(random.choice(visual))
    st.image(imagew, use_column_width= True )
-   requests.get('https://script.google.com/macros/s/AKfycbzY892SMPHBvZ1IC69914dQuAxnlpoFKk8dnc0-iEgjmnWgXFFhFP-hHszu8j0LI7yljw/exec?tem='+genre+'&humid='+predic+'&res='+res+'&room=1')
+   requests.get('https://script.google.com/macros/s/AKfycbxQv4rcAD57LLBvjvZn4rLn03rjpauVLMvLdxaIB_eVsjRXyKKHw4QVK7XR6wFbJBJnOg/exec?tem='+genre+'&humid='+predic+'&res='+res+'+'&contid='+user_id+'&room=1')
    st.markdown("<h1 style='text-align: center; color: Tomato;'>Happy Learning ✒️</h1>", unsafe_allow_html=True) 
    st.button("Refresh")
