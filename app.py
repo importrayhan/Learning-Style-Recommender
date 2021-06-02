@@ -38,9 +38,7 @@ with st.beta_expander("Take the quiz to find out | Expand to know more"):
 A pre trained Decision Tree Model is running on the backend of this website\n
 During evaluation of the model, it gave the following f1 score for the mentioned VARK categories respectively: \n
 ## [0.70, 0.65, 0.81, 0.81]""")
-      st.markdown(""" ## Authors : \n [Dr. Md. Rakibul Hoque](https://scholar.google.com/citations?user=3AwQ-8kAAAAJ&hl=en) \n 
-[Dr. M. Helal Uddin Ahmed](https://www.du.ac.bd/faculty/faculty_details/MIS/743)""" )
-
+      
 reader = ['R1.jpg', 'R2.jpg']
 visual = ['V1.jpg', 'V2.jpg']
 aural = ['A1.jpg', 'A2.jpg','A3.jpg','A4.jpg','A5.jpg']
