@@ -119,7 +119,7 @@ if placeholder.button('Find Out'):
    classifier = pickle.load(pickle_in)
    X_test = one_pos()
    prediction = classifier.predict(X_test)
-   res = ' '.join([str(elem) for elem in X_test[0]) 
+   res = ' '.join([str(elem) for elem in X_test[0]]) 
    my_bar = st.progress(0)
   
    for percent_complete in range(100):
