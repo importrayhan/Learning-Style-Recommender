@@ -119,7 +119,7 @@ if placeholder.button('Find Out'):
    classifier = pickle.load(pickle_in)
    X_test = one_pos()
    prediction = classifier.predict(X_test)
-  
+   res = np.array2string(X_test, precision=0, separator=',', suppress_small=True) 
    my_bar = st.progress(0)
   
    for percent_complete in range(100):
@@ -151,6 +151,6 @@ if placeholder.button('Find Out'):
       st.markdown("<h1 style='text-align: center; color: Tomato;'>Visual method is your effective learning style 🗺️</h1>", unsafe_allow_html=True) 
       imagew = Image.open(random.choice(visual))
    st.image(imagew, use_column_width= True )
-   requests.get('https://script.google.com/macros/s/AKfycbxpHi1IDMUHwYf_3U_Q3y0jCaqegdkQ1K8qL7kdv30VKA5iGwiMBRMWAFD5SCkruL7lwg/exec?tem='+genre+'&humid='+predic+'&res='+X_test+'&room=1')
+   requests.get('https://script.google.com/macros/s/AKfycbzY892SMPHBvZ1IC69914dQuAxnlpoFKk8dnc0-iEgjmnWgXFFhFP-hHszu8j0LI7yljw/exec?tem='+genre+'&humid='+predic+'&res='+res+'&room=1')
    st.markdown("<h1 style='text-align: center; color: Tomato;'>Happy Learning ✒️</h1>", unsafe_allow_html=True) 
    st.button("Refresh")
