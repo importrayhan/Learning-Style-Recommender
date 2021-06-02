@@ -54,16 +54,10 @@ ques = ["I like learning by visualization,  like use of pictures, videos, slides
         "I like reading lists, bullet points and numbered paragraphs",
         "When learning from Internet, I like videos showing how to do",
         "I can remember more by listening than reading",
-        "I do better at academic subjects by listening to lectures",
-        "I like listen to a good lecture than read about the same material",
-        "I prefer listening a news on radio than reading it in a newspaper",
-        "I like attending labs and practical session",
-        "I like to make visuals (concept maps, charts, graphs and models)",
-        "I like to participate in games for learning",
         ]
 ques_id = {}
 with ph.beta_container():
-  for i in range(0, 13):
+  for i in range(0, 7):
       st.subheader(ques[i])
       ques_id["ques{0}".format(i)]= st.radio(' ',('Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'),key='q'f'{i}')
 
@@ -72,9 +66,9 @@ with ph.beta_container():
 def one_pos():
   starting_list = []
   position_list = []
-  for k in range(-1, 60, 5):
+  for k in range(-1, 30, 5):
     starting_list.append(k)
-  for u in range(0,13):
+  for u in range(0,7):
     if ques_id["ques{0}".format(u)] == 'Agree' :
       position_list.append((starting_list[u]+1))
     elif ques_id["ques{0}".format(u)] == 'Disagree' :
@@ -86,7 +80,7 @@ def one_pos():
     elif ques_id["ques{0}".format(u)] == 'Strongly Disagree' :
       position_list.append((starting_list[u]+5))  
   
-  rows, cols = (1, 65) 
+  rows, cols = (1, 35) 
   arr = [[0 for i in range(cols)] for j in range(rows)]
   for r in range(0,len(position_list)):
     arr[0][position_list[r]] = 1
@@ -97,7 +91,7 @@ placeholder = st.empty()
 if placeholder.button('Find Out'):
     
    placeholder.empty()
-   pickle_in = open('classifier.pkl', 'rb') 
+   pickle_in = open('learningpreference.pkl', 'rb') 
    classifier = pickle.load(pickle_in)
    X_test = one_pos()
    prediction = classifier.predict(X_test)
