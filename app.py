@@ -37,10 +37,31 @@ with st.beta_expander("Take the quiz to find out | Expand to know more"):
           This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning
       """)
       st.markdown(""" ### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
+A brief description of these learning styles can be found below: \n
+1) Visual: visual learners like to be provided demonstrations and can \n
+learn through descriptions. They like to use lists to maintain pace \n
+and organise their thoughts. They remember faces but often forget \n
+names. They are distracted by movement or action but noise \n
+usually does not bother them. \n
+2) Aural: aural learners learn by listening. They like to be provided\ n
+with aural instructions. They enjoy aural discussions and \n
+dialogues and prefer to work out problems by talking. They are \n
+easily distracted by noise. \n
+3) Read/write: read/write learners are note takers. They do best by \n
+taking notes during a lecture or reading difficult material. They \n
+often draw things to remember them. They do well with hands-on \n
+projects or tasks. \n
+4) Kinesthetic: kinesthetic learners learn best by doing. Their \n
+preference is for hands-on experiences. They are often high \n
+energy and like to make use of touching, moving and interacting \n
+with their environment. They prefer not to watch or listen and \n
+generally do not do well in the classroom. \n
+Source: (www.geocities.com/-educationplace)      \n
 A pre trained Decision Tree Model is running on the backend of this website\n
 During evaluation of the model, it gave the following f1 score for the mentioned VARK categories respectively: \n
 ## [0.70, 0.65, 0.81, 0.81]""")
-      
+genre = st.radio("From your understanding which of these is your most dominant learning style?",
+                 options=['Visual', 'Aural', 'Reader','Kinesthetic'])      
 reader = ['R1.jpg', 'R2.jpg']
 visual = ['V1.jpg', 'V2.jpg']
 aural = ['A1.jpg', 'A2.jpg','A3.jpg','A4.jpg','A5.jpg']
@@ -48,9 +69,6 @@ kinesthetic = ['K1.jpg', 'K2.jpg','K3.jpg']
 
  
 ph = st.empty()
-genre = st.radio("From your understanding which of these is your most dominant learning style?",
-                 options=['Visual', 'Aural', 'Reader','Kinesthetic'])
-
 
 ques = ["I like learning by visualization,  like use of pictures, videos, slides",
         "I like learning by using diagrams, graphs and charts",
