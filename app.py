@@ -33,9 +33,7 @@ im , im2 = intro_image()
 st.image(im, caption=None, use_column_width= True , clamp=False, channels='RGB', output_format='auto')
 #st.image(im2, use_column_width= True )
 
-st.subheader('
-    This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning
-')
+st.subheader('This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning')
 
 st.markdown(""" ### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
 A brief description of these learning styles can be found below: \n
