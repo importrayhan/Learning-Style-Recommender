@@ -17,7 +17,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 @st.cache(show_spinner=False)
 def intro_image():
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 60)
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 57)
   im = Image.new("RGB", (890, 100), "white")
   d = ImageDraw.Draw(im) 
   d.text((450, 60), "Identify Your Learning Style", fill="OrangeRed", anchor="ms", font=font)
