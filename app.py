@@ -38,13 +38,12 @@ st.markdown("""
 ##### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
 A brief description of these learning styles can be found below: \n
 Source: (www.geocities.com/-educationplace)      \n
-A pre trained Decision Tree Model is running on the backend of this website\n
 """)
 st.markdown(""" |        Visual         |       Aural       |     Read/write    |        Kinesthetic         |
                 | :---                                  |    :----:   |          ---: |          ---: |
                 | visual learners like to be provided demonstrations and can learn through descriptions. They like to use lists to maintain pace and organise their thoughts. They remember faces but often forget names. They are distracted by movement or action but noise usually does not bother them. |aural learners learn by listening. They like to be provided with aural instructions. They enjoy aural discussions and  dialogues and prefer to work out problems by talking. They are easily distracted by noise. | read/write learners are note takers. They do best by  taking notes during a lecture or reading difficult material. They  often draw things to remember them. They do well with hands-on projects or tasks.      |learn best by doing. Their  preference is for hands-on experiences. They are often high  energy and like to make use of touching, moving and interacting  with their environment. They prefer not to watch or listen and  generally do not do well in the classroom.|
 
-#####So far, the model gave the following f1 score for the mentioned VARK categories respectively: \n
+##### A pre trained Decision Tree Model is running on the backend of this website\n So far, the model gave the following f1 score for the mentioned VARK categories respectively: \n
 ### [0.70, 0.65, 0.81, 0.81]
 """)
 
