@@ -37,26 +37,21 @@ st.subheader('This project is an implementation of Machine Learning Model to ide
 
 st.markdown(""" | Visual      | Aural       | Read/write    | Kinesthetic    |
                 | :---                                  |    :----:   |          ---: |          ---: |
-                
-                | visual learners like to be provided demonstrations and can \n
-learn through descriptions. They like to use lists to maintain pace \n
-and organise their thoughts. They remember faces but often forget \n
-names. They are distracted by movement or action but noise \n
-usually does not bother them. \n                                          |aural learners learn by listening. They like to be provided\ n
-with aural instructions. They enjoy aural discussions and \n
-dialogues and prefer to work out problems by talking. They are \n
-easily distracted by noise. \n
-3) Read/write: read/write learners are note takers. They do best by \n
-taking notes during a lecture or reading difficult material. They \n
-often draw things to remember them. They do well with hands-on \n
-projects or tasks. \n       |  read/write learners are note takers. They do best by \n
-taking notes during a lecture or reading difficult material. They \n
-often draw things to remember them. They do well with hands-on \n
-projects or tasks. \n  |inesthetic learners learn best by doing. Their \n
-preference is for hands-on experiences. They are often high \n
-energy and like to make use of touching, moving and interacting \n
-with their environment. They prefer not to watch or listen and \n
-generally do not do well in the classroom. \n|
+                | visual learners like to be provided demonstrations and can 
+learn through descriptions. They like to use lists to maintain pace 
+and organise their thoughts. They remember faces but often forget 
+names. They are distracted by movement or action but noise 
+usually does not bother them. |aural learners learn by listening. They like to be provided
+with aural instructions. They enjoy aural discussions and 
+dialogues and prefer to work out problems by talking. They are
+easily distracted by noise. | read/write learners are note takers. They do best by 
+taking notes during a lecture or reading difficult material. They 
+often draw things to remember them. They do well with hands-on
+projects or tasks.      |learn best by doing. Their 
+preference is for hands-on experiences. They are often high 
+energy and like to make use of touching, moving and interacting 
+with their environment. They prefer not to watch or listen and 
+generally do not do well in the classroom.|
 
 
 
