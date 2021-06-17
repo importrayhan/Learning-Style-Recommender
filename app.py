@@ -20,7 +20,7 @@ def intro_image():
   font = ImageFont.truetype("NebulousRegular-54aV.ttf", 65)
   im = Image.new("RGB", (890, 100), "white")
   d = ImageDraw.Draw(im) 
-  d.text((450, 60), "Identify Your", fill="OrangeRed", anchor="ms", font=font)
+  d.text((450, 60), "Identify Your Learning Style", fill="OrangeRed", anchor="ms", font=font)
 
   font = ImageFont.truetype("NebulousRegular-54aV.ttf", 605)
   im2 = Image.open('style.jpg')
@@ -28,7 +28,7 @@ def intro_image():
   d.text((1500, 850), "Learning", fill="LightYellow", anchor="ms", font=font)
   return im,im2
 
-im , im2 = intro_image()
+im , _ = intro_image()
 
 st.image(im, caption=None, use_column_width= True , clamp=False, channels='RGB', output_format='auto')
 st.image(im2, use_column_width= True )
