@@ -22,7 +22,7 @@ def intro_image():
   d = ImageDraw.Draw(im) 
   d.text((450, 60), "Identify Your Learning Style", fill="OrangeRed", anchor="ms", font=font)
 
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 605)
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 600)
   im2 = Image.open('style.jpg')
   d = ImageDraw.Draw(im2) 
   d.text((1500, 850), "Learning", fill="LightYellow", anchor="ms", font=font)
@@ -32,11 +32,12 @@ im , im2 = intro_image()
 
 st.image(im, caption=None, use_column_width= True , clamp=False, channels='RGB', output_format='auto')
 #st.image(im2, use_column_width= True )
-with st.beta_expander("Take the quiz to find out | Expand to know more"):
-      st.write("""
-          This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning
-      """)
-      st.markdown(""" ### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
+
+st.subheader('
+    This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning
+')
+
+st.markdown(""" ### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
 A brief description of these learning styles can be found below: \n
 1) Visual: visual learners like to be provided demonstrations and can \n
 learn through descriptions. They like to use lists to maintain pace \n
@@ -81,7 +82,7 @@ ques_id = {}
 with ph.beta_container():
   genre = st.radio("From your understanding which of these is your most dominant learning style?",
                  options=['Visual', 'Aural', 'Reader','Kinesthetic'])   
-  user_id = st.text_input("* Contact Number", value="Your Mobile Number ", max_chars=14)
+  user_id = st.text_input("Provide email to recieve detail interpretation of our system", value="example@gmail.com", max_chars=20)
   for i in range(0, 7):
       st.subheader(ques[i])
       ques_id["ques{0}".format(i)]= st.radio(' ',('Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'),key='q'f'{i}')
