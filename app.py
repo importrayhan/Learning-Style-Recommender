@@ -17,12 +17,12 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 @st.cache(show_spinner=False)
 def intro_image():
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 65)
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 60)
   im = Image.new("RGB", (890, 100), "white")
   d = ImageDraw.Draw(im) 
   d.text((450, 60), "Identify Your Learning Style", fill="OrangeRed", anchor="ms", font=font)
 
-  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 600)
+  font = ImageFont.truetype("NebulousRegular-54aV.ttf", 605)
   im2 = Image.open('style.jpg')
   d = ImageDraw.Draw(im2) 
   d.text((1500, 850), "Learning", fill="LightYellow", anchor="ms", font=font)
@@ -35,7 +35,7 @@ st.image(im, caption=None, use_column_width= True , clamp=False, channels='RGB',
 
 st.subheader('This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning')
 
-st.markdown(""" ### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
+st.markdown(""" ##### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
 A brief description of these learning styles can be found below: \n
 1) Visual: visual learners like to be provided demonstrations and can \n
 learn through descriptions. They like to use lists to maintain pace \n
