@@ -35,7 +35,34 @@ st.image(im, caption=None, use_column_width= True , clamp=False, channels='RGB',
 
 st.subheader('This project is an implementation of Machine Learning Model to identify effective learning style in student centric learning')
 
-st.markdown(""" ##### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
+st.markdown(""" | Visual      | Aural       | Read/write    | Kinesthetic    |
+                | :---                                  |    :----:   |          ---: |          ---: |
+                
+                | visual learners like to be provided demonstrations and can \n
+learn through descriptions. They like to use lists to maintain pace \n
+and organise their thoughts. They remember faces but often forget \n
+names. They are distracted by movement or action but noise \n
+usually does not bother them. \n                                          |aural learners learn by listening. They like to be provided\ n
+with aural instructions. They enjoy aural discussions and \n
+dialogues and prefer to work out problems by talking. They are \n
+easily distracted by noise. \n
+3) Read/write: read/write learners are note takers. They do best by \n
+taking notes during a lecture or reading difficult material. They \n
+often draw things to remember them. They do well with hands-on \n
+projects or tasks. \n       |  read/write learners are note takers. They do best by \n
+taking notes during a lecture or reading difficult material. They \n
+often draw things to remember them. They do well with hands-on \n
+projects or tasks. \n  |inesthetic learners learn best by doing. Their \n
+preference is for hands-on experiences. They are often high \n
+energy and like to make use of touching, moving and interacting \n
+with their environment. They prefer not to watch or listen and \n
+generally do not do well in the classroom. \n|
+
+
+
+
+
+##### VARK model has four learning style categories : Aural, Kinesthetic, Reader & Visual \n 
 A brief description of these learning styles can be found below: \n
 1) Visual: visual learners like to be provided demonstrations and can \n
 learn through descriptions. They like to use lists to maintain pace \n
